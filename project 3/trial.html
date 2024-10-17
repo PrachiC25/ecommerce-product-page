@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Headphones - Sonic Bliss</title>
+    <link rel="stylesheet" href="trial.css">
+</head>
+<body>
+    <div class="container">
+        <div class="product">
+            <div class="product-image">
+                <img id="main-image" src="D:\web\project 3\front1.webp" alt="Sonic Bliss Headphones">
+            </div>
+            <div class="gallery">
+                <img src="D:\web\project 3\front1.webp" alt="Headphones front view" onclick="changeMainImage('front1.webp')">
+                <img src="D:\web\project 3\side1.webp" alt="Headphones front view" onclick="changeMainImage('side1.webp')">
+                <img src="D:\web\project 3\side.webp" alt="Headphones side view" onclick="changeMainImage('side.webp')">
+                <img src="D:\web\project 3\back.webp" alt="Headphones back view" onclick="changeMainImage('back.webp')">
+            </div>
+            <div class="product-details">
+                <h1>Sonic Bliss Headphones</h1>
+                <p class="description">Experience audio nirvana with our premium Sonic Bliss headphones. Featuring cutting-edge 
+                    noise-cancellation technology, luxurious comfort, and breathtaking sound quality, these headphones are perfect
+                     for audiophiles and music enthusiasts alike.</p>
+                <div class="rating">
+                    <span class="star">★★★★</span>
+                    <span class="star-half">★</span>
+                    <span>(4.5/5 based on 256 reviews)</span>
+                </div>
+                <p class="price">$299.99</p>
+                <div class="color-options">
+                    <div class="color-option selected" style="background-color: #000000;" onclick="selectColor('#000000')"></div>
+                    <div class="color-option" style="background-color: #FFFFFF;" onclick="selectColor('#FFFFFF')"></div>
+                    <div class="color-option" style="background-color: #FF0000;" onclick="selectColor('#FF0000')"></div>
+                    <div class="color-option" style="background-color: #0000FF;" onclick="selectColor('#0000FF')"></div>
+                </div>
+                <div class="size-options">
+                    <div class="size-option" onclick="selectSize('S')">S</div>
+                    <div class="size-option selected" onclick="selectSize('M')">M</div>
+                    <div class="size-option" onclick="selectSize('L')">L</div>
+                </div>
+                <div class="button-group">
+                    <button class="button buy-now-button" onclick="buyNow()">
+                        <img width="32" height="32" src="https://img.icons8.com/ios/50/buy--v1.png" alt="buy--v1"/>
+                        Buy Now
+                    </button>
+                    <button class="button add-to-cart-button" onclick="addToCart()">
+                        <img width="32" height="32" src="https://img.icons8.com/ios/50/add-shopping-cart--v1.png" alt="add-shopping-cart--v1"/>
+                        Add to Cart
+                    </button>
+                    <button class="button wishlist-button" onclick="addToWishlist()">
+                        <img width="32" height="32" src="https://img.icons8.com/windows/32/add-to-shopping-basket.png" alt="add-to-shopping-basket"/>
+                        Add to Wishlist
+                    </button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div id="cart">
+        Cart: <span id="cart-count">0</span> items
+    </div>
+    <button class="theme-toggle" onclick="toggleTheme()">🌓</button>
+
+
+    <script src="trial.js"></script>
+</body>
+</html>
